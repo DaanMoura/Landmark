@@ -17,14 +17,21 @@ struct LandmarkRow: View {
             landmark.image
                 .resizable()
                 .frame(width: imageSize, height: imageSize)
-                .clipShape(Circle())
+                .cornerRadius(8)
             Text(landmark.name)
             Spacer()
+            
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.accentColor)
+            }
         }
     }
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    static var landmarks = ModelData().landmarks
+    
     static var previews: some View {
         Group {
             LandmarkRow(landmark: landmarks[0])
