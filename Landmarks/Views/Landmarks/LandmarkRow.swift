@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let imageSize: CGFloat = 50
+private let imageSize: CGFloat = 50
 
 struct LandmarkRow: View {
     var landmark: Landmark

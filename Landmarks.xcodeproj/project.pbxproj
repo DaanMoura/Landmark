@@ -30,6 +30,9 @@
 		209E913A29DE5D2800335B48 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E913629DE5D2800335B48 /* HikeGraph.swift */; };
 		209E913B29DE5D2800335B48 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E913729DE5D2800335B48 /* HikeDetail.swift */; };
 		209E913C29DE5D2800335B48 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E913829DE5D2800335B48 /* HikeView.swift */; };
+		209E913F29DE644B00335B48 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E913E29DE644B00335B48 /* CategoryHome.swift */; };
+		209E914129DE65F000335B48 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E914029DE65F000335B48 /* CategoryRow.swift */; };
+		209E914329DE678900335B48 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E914229DE678900335B48 /* CategoryItem.swift */; };
 		20B472AF29DD211400954747 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B472AE29DD211300954747 /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		209E913629DE5D2800335B48 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		209E913729DE5D2800335B48 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		209E913829DE5D2800335B48 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
+		209E913E29DE644B00335B48 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		209E914029DE65F000335B48 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		209E914229DE678900335B48 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		20B472AE29DD211300954747 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +118,7 @@
 		2010D45F29DBBDE6006DBDF4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				209E913D29DE643300335B48 /* Categories */,
 				209E913429DE5D2800335B48 /* Hikes */,
 				209E912729DE56BE00335B48 /* Badges */,
 				20B472B129DD21E400954747 /* Helpers */,
@@ -161,6 +168,16 @@
 				209E913829DE5D2800335B48 /* HikeView.swift */,
 			);
 			path = Hikes;
+			sourceTree = "<group>";
+		};
+		209E913D29DE643300335B48 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				209E913E29DE644B00335B48 /* CategoryHome.swift */,
+				209E914029DE65F000335B48 /* CategoryRow.swift */,
+				209E914229DE678900335B48 /* CategoryItem.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		20B472B029DD21C500954747 /* Landmarks */ = {
@@ -255,13 +272,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209E914129DE65F000335B48 /* CategoryRow.swift in Sources */,
 				2010D44A29DB9493006DBDF4 /* ContentView.swift in Sources */,
+				209E913F29DE644B00335B48 /* CategoryHome.swift in Sources */,
 				209E913A29DE5D2800335B48 /* HikeGraph.swift in Sources */,
 				209E912F29DE57B600335B48 /* Badge.swift in Sources */,
 				2010D45829DBB0D2006DBDF4 /* MapView.swift in Sources */,
 				209E913929DE5D2800335B48 /* GraphCapsule.swift in Sources */,
 				2010D44829DB9493006DBDF4 /* LandmarksApp.swift in Sources */,
 				20B472AF29DD211400954747 /* FavoriteButton.swift in Sources */,
+				209E914329DE678900335B48 /* CategoryItem.swift in Sources */,
 				209E913B29DE5D2800335B48 /* HikeDetail.swift in Sources */,
 				209E912229DE4E4A00335B48 /* HexagonParameters.swift in Sources */,
 				209E913329DE5BFC00335B48 /* Hike.swift in Sources */,

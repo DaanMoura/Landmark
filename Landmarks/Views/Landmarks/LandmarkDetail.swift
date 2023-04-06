@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-let mapHeight: CGFloat = 300
-let imageOffset: CGFloat = -130
+private let mapHeight: CGFloat = 300
+private let imageOffset: CGFloat = -130
 
 struct LandmarkDetail: View {
     @EnvironmentObject var modelData: ModelData
