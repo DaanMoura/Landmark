@@ -29,6 +29,6 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(coordinate: landmarks[0].locationCoordinate)
+        MapView(coordinate: CLLocationCoordinate2D(latitude: 0, longitude: 0))
     }
 }
