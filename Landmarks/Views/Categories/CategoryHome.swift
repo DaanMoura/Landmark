@@ -13,24 +13,24 @@ struct CategoryHome: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showingProfile = false
     
+    
     var body: some View {
         NavigationView {
             List {
-                modelData.features[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: featuredImageHeight)
-                    .clipped()
+                PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
+                    .aspectRatio(3/2, contentMode: .fit)
                     .listRowInsets(EdgeInsets())
-                    .padding(.bottom)
                     .listRowSeparator(.hidden)
                 
-                ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
+                let sortedKeys = modelData.categories.keys.sorted()
+                ForEach(sortedKeys, id: \.self) { key in
                     CategoryRow(categoryName: key, items: modelData.categories[key]!)
+                        .listRowSeparator(key == sortedKeys.last ? .hidden : .visible)
+                        .padding(.vertical)
                 }
                 .listRowInsets(EdgeInsets())
             }
-            .listStyle(.inset)
+            .listStyle(.plain)
             .navigationTitle("Featured")
             .toolbar {
                 Button {

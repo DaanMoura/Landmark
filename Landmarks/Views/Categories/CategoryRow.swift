@@ -33,7 +33,6 @@ struct CategoryRow: View {
             }
             .frame(height: frameHeight)
         }
-        .padding(.bottom)
     }
 }
 
